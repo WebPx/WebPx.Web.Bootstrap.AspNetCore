@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "_Layout";
+}
+<div class="row">
+    <div class="col-2">
+        <partial name="_Nav" />
+    </div>
+    <div class="col-10">
+        <h2>@ViewBag.Title</h2>
+        @RenderBody()
+    </div>
+</div>
+@section header
+{
+    <link rel="stylesheet" href="~/css/demos.css" />
+    <link rel="stylesheet" href="~/css/htmlcode.css" />
+}

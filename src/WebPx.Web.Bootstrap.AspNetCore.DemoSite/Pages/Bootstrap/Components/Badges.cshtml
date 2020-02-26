@@ -1,0 +1,117 @@
+﻿@page
+@model WebPx.Web.Bootstrap.AspNetCore.DemoSite.Pages.Bootstrap.Components.BadgesModel
+@{
+    ViewBag.Title = "Badges";
+}
+<h5>Example</h5>
+<div class="bd-example">
+    <h1>Example heading <bs:badge skin="secondary">New</bs:badge></h1>
+    <h2>Example heading <bs:badge skin="secondary">New</bs:badge></h2>
+    <h3>Example heading <bs:badge skin="secondary">New</bs:badge></h3>
+    <h4>Example heading <bs:badge skin="secondary">New</bs:badge></h4>
+    <h5>Example heading <bs:badge skin="secondary">New</bs:badge></h5>
+    <h6>Example heading <bs:badge skin="secondary">New</bs:badge></h6>
+</div>
+<figure class="highlight">
+    <pre><code html><h1>Example heading <!bs:badge skin="secondary">New</!bs:badge></h1>
+<h2>Example heading <!bs:badge skin="secondary">New</!bs:badge></h2>
+<h3>Example heading <!bs:badge skin="secondary">New</!bs:badge></h3>
+<h4>Example heading <!bs:badge skin="secondary">New</!bs:badge></h4>
+<h5>Example heading <!bs:badge skin="secondary">New</!bs:badge></h5>
+<h6>Example heading <!bs:badge skin="secondary">New</!bs:badge></h6></code></pre>
+</figure>
+
+<p>Badges can be used as part of links or buttons to provide a counter.</p>
+
+<div class="bd-example">
+    <bs:button skin="Success" type="submit">Notifications <bs:badge skin="light">4</bs:badge></bs:button>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:button class="btn btn-primary" skin="Primary">
+    Notifications <!bs:badge skin="light">4</!bs:badge>
+</!bs:button></code></pre>
+</figure>
+
+<p>
+    Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button.
+</p>
+<p>
+    Unless the context is clear (as with the “Notifications” example, where it is understood that the “4” is the number of notifications), consider including additional context with a visually hidden piece of additional text.
+</p>
+
+<div class="bd-example">
+    <bs:button skin="Primary" type="submit">Profile <bs:badge skin="light" sr-description="Unread messages">9</bs:badge></bs:button>
+</div>
+<figure class="highlight">
+    <pre><code raw><!bs:button skin="Primary" type="submit">Profile <!bs:badge skin="light" sr-description="Unread messages">9</!bs:badge></!bs:button></code></pre>
+</figure>
+
+<h3>Contextual variations</h3>
+
+<div class="bd-example">
+    <bs:badge skin="Primary">Primary</bs:badge>
+    <bs:badge skin="Secondary">Secondary</bs:badge>
+    <bs:badge skin="Success">Success</bs:badge>
+    <bs:badge skin="Danger">Danger</bs:badge>
+    <bs:badge skin="Warning">Warning</bs:badge>
+    <bs:badge skin="Info">Info</bs:badge>
+    <bs:badge skin="Light">Light</bs:badge>
+    <bs:badge skin="Dark">Dark</bs:badge>
+</div>
+<figure class="highlight">
+<pre><code html><!bs:badge skin="Primary">Primary</!bs:badge>
+<!bs:badge skin="Secondary">Secondary</!bs:badge>
+<!bs:badge skin="Success">Success</!bs:badge>
+<!bs:badge skin="Danger">Danger</!bs:badge>
+<!bs:badge skin="Warning">Warning</!bs:badge>
+<!bs:badge skin="Info">Info</!bs:badge>
+<!bs:badge skin="Light">Light</!bs:badge>
+<!bs:badge skin="Dark">Dark</!bs:badge>
+</code></pre>
+</figure>
+
+<h3>Pill badges</h3>
+
+<div class="bd-example">
+    <bs:badge skin="Primary" pill="true">Primary</bs:badge>
+    <bs:badge skin="Secondary" pill="true">Secondary</bs:badge>
+    <bs:badge skin="Success" pill="true">Success</bs:badge>
+    <bs:badge skin="Danger" pill="true">Danger</bs:badge>
+    <bs:badge skin="Warning" pill="true">Warning</bs:badge>
+    <bs:badge skin="Info" pill="true">Info</bs:badge>
+    <bs:badge skin="Light" pill="true">Light</bs:badge>
+    <bs:badge skin="Dark" pill="true">Dark</bs:badge>
+</div>
+<figure class="highlight">
+<pre><code html><!bs:badge skin="Primary" pill="true">Primary</!bs:badge>
+<!bs:badge skin="Secondary" pill="true">Secondary</!bs:badge>
+<!bs:badge skin="Success" pill="true">Success</!bs:badge>
+<!bs:badge skin="Danger" pill="true">Danger</!bs:badge>
+<!bs:badge skin="Warning" pill="true">Warning</!bs:badge>
+<!bs:badge skin="Info" pill="true">Info</!bs:badge>
+<!bs:badge skin="Light" pill="true">Light</!bs:badge>
+<!bs:badge skin="Dark" pill="true">Dark</!bs:badge></code></pre>
+</figure>
+
+<h3>Links</h3>
+<p>Using the contextual <code>.badge-*</code> classes on an <code>&lt;a&gt;</code> element quickly provide actionable badges with hover and focus states.</p>
+<div class="bd-example">
+    <a badge skin="Primary" pill="true" href="#">Primary</a>
+    <a badge skin="Secondary" pill="true" href="#">Secondary</a>
+    <a badge skin="Success" pill="true" href="#">Success</a>
+    <a badge skin="Danger" pill="true" href="#">Danger</a>
+    <a badge skin="Warning" pill="true" href="#">Warning</a>
+    <a badge skin="Info" pill="true" href="#">Info</a>
+    <a badge skin="Light" pill="true" href="#">Light</a>
+    <a badge skin="Dark" pill="true" href="#">Dark</a>
+</div>
+<figure class="highlight">
+<pre><code html><!a badge skin="Primary" pill="true" href="#">Primary</!a>
+<!a badge skin="Secondary" pill="true" href="#">Secondary</!a>
+<!a badge skin="Success" pill="true" href="#">Success</!a>
+<!a badge skin="Danger" pill="true" href="#">Danger</!a>
+<!a badge skin="Warning" pill="true" href="#">Warning</!a>
+<!a badge skin="Info" pill="true" href="#">Info</!a>
+<!a badge skin="Light" pill="true" href="#">Light</!a>
+<!a badge skin="Dark" pill="true" href="#">Dark</!a></code></pre>
+</figure>

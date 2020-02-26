@@ -1,0 +1,192 @@
+﻿@page
+@model WebPx.Web.Bootstrap.AspNetCore.DemoSite.Pages.Bootstrap.Components.ButtonGroupModel
+@{
+    ViewBag.Title = "Button Groups";
+}
+<h3>Examples</h3>
+<p>Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.</p>
+<div class="bd-example">
+    <bs:btn-group aria-label="Basic Sample">
+        <bs:button skin="secondary">Left</bs:button>
+        <bs:button skin="secondary">Middle</bs:button>
+        <bs:button skin="secondary">Right</bs:button>
+    </bs:btn-group>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:btn-group aria-label="Basic Sample">
+    <!bs:button skin="secondary">Left</!bs:button>
+    <!bs:button skin="secondary">Middle</!bs:button>
+    <!bs:button skin="secondary">Right</!bs:button>
+</!bs:btn-group></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:btn-toolbar>
+        <bs:btn-group aria-label="First Group" add-class="mr-2">
+            <bs:button skin="secondary">1</bs:button>
+            <bs:button skin="secondary">2</bs:button>
+            <bs:button skin="secondary">3</bs:button>
+            <bs:button skin="secondary">4</bs:button>
+        </bs:btn-group>
+        <bs:btn-group aria-label="Second Group" add-class="mr-2">
+            <bs:button skin="secondary">5</bs:button>
+            <bs:button skin="secondary">6</bs:button>
+            <bs:button skin="secondary">7</bs:button>
+        </bs:btn-group>
+        <bs:btn-group aria-label="Third Group">
+            <bs:button skin="secondary">8</bs:button>
+        </bs:btn-group>
+    </bs:btn-toolbar>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:btn-toolbar>
+    <!bs:btn-group append-class="mr-2" aria-label="First Group">
+        <!bs:button skin="secondary">1</!bs:button>
+        <!bs:button skin="secondary">2</!bs:button>
+        <!bs:button skin="secondary">3</!bs:button>
+        <!bs:button skin="secondary">4</!bs:button>
+    </!bs:btn-group>
+    <!bs:btn-group append-class="mr-2" aria-label="Second Group">
+        <!bs:button skin="secondary">5</!bs:button>
+        <!bs:button skin="secondary">6</!bs:button>
+        <!bs:button skin="secondary">7</!bs:button>
+    </!bs:btn-group>
+    <!bs:btn-group aria-label="Third Group">
+        <!bs:button skin="secondary">8</!bs:button>
+    </!bs:btn-group>
+</!bs:btn-toolbar></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:btn-toolbar add-class="mb-3">
+        <bs:btn-group aria-label="First Group" add-class="mr-2">
+            <bs:button skin="secondary">1</bs:button>
+            <bs:button skin="secondary">2</bs:button>
+            <bs:button skin="secondary">3</bs:button>
+            <bs:button skin="secondary">4</bs:button>
+        </bs:btn-group>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@@</div>
+            </div>
+            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+        </div>
+    </bs:btn-toolbar>
+    <bs:btn-toolbar add-class="justify-content-between">
+        <bs:btn-group aria-label="First Group" add-class="mr-2">
+            <bs:button skin="secondary">1</bs:button>
+            <bs:button skin="secondary">2</bs:button>
+            <bs:button skin="secondary">3</bs:button>
+            <bs:button skin="secondary">4</bs:button>
+        </bs:btn-group>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@@</div>
+            </div>
+            <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+        </div>
+    </bs:btn-toolbar>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:btn-toolbar add-class="mb-3">
+    <!bs:btn-group aria-label="First Group" add-class="mr-2">
+        <!bs:button skin="secondary">1</!bs:button>
+        <!bs:button skin="secondary">2</!bs:button>
+        <!bs:button skin="secondary">3</!bs:button>
+        <!bs:button skin="secondary">4</!bs:button>
+    </!bs:btn-group>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">@@</div>
+        </div>
+        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+    </div>
+</!bs:btn-toolbar>
+<!bs:btn-toolbar add-class="justify-content-between">
+    <!bs:btn-group aria-label="First Group" add-class="mr-2">
+        <!bs:button skin="secondary">1</!bs:button>
+        <!bs:button skin="secondary">2</!bs:button>
+        <!bs:button skin="secondary">3</!bs:button>
+        <!bs:button skin="secondary">4</!bs:button>
+    </!bs:btn-group>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">@@</div>
+        </div>
+        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+    </div>
+</!bs:btn-toolbar></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:btn-group size="Small" add-class="mb-2" aria-label="Basic Sample">
+        <bs:button skin="secondary">Left</bs:button>
+        <bs:button skin="secondary">Middle</bs:button>
+        <bs:button skin="secondary">Right</bs:button>
+    </bs:btn-group><br />
+    <bs:btn-group add-class="mb-2" aria-label="Basic Sample">
+        <bs:button skin="secondary">Left</bs:button>
+        <bs:button skin="secondary">Middle</bs:button>
+        <bs:button skin="secondary">Right</bs:button>
+    </bs:btn-group><br />
+    <bs:btn-group size="Large" add-class="mb-2" aria-label="Basic Sample">
+        <bs:button skin="secondary">Left</bs:button>
+        <bs:button skin="secondary">Middle</bs:button>
+        <bs:button skin="secondary">Right</bs:button>
+    </bs:btn-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:btn-group size="Small" add-class="mb-2" aria-label="Basic Sample">
+    <bs:button skin="secondary">Left</bs:button>
+    <bs:button skin="secondary">Middle</bs:button>
+    <bs:button skin="secondary">Right</bs:button>
+</!bs:btn-group><br />
+<!bs:btn-group add-class="mb-2" aria-label="Basic Sample">
+    <bs:button skin="secondary">Left</bs:button>
+    <bs:button skin="secondary">Middle</bs:button>
+    <bs:button skin="secondary">Right</bs:button>
+</!bs:btn-group><br />
+<!bs:btn-group size="Large" add-class="mb-2" aria-label="Basic Sample">
+    <bs:button skin="secondary">Left</bs:button>
+    <bs:button skin="secondary">Middle</bs:button>
+    <bs:button skin="secondary">Right</bs:button>
+</!bs:btn-group></code></pre></figure>
+
+
+<div class="bd-example">
+    <bs:btn-group add-class="mb-2" aria-label="Basic Sample">
+        <bs:button skin="secondary">1</bs:button>
+        <bs:button skin="secondary">2</bs:button>
+        <bs:dropdown caption="Dropdown" id="btn1">
+            <bs:item url="#">Dropdown link</bs:item>
+            <bs:item url="#">Dropdown link</bs:item>
+        </bs:dropdown>
+    </bs:btn-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:btn-group add-class="mb-2" aria-label="Basic Sample">
+    <!bs:button skin="secondary">1</!bs:button>
+    <!bs:button skin="secondary">2</!bs:button>
+    <!bs:dropdown caption="Dropdown" id="btn1">
+        <!bs:item url="#">Dropdown link</!bs:item>
+        <!bs:item url="#">Dropdown link</!bs:item>
+    </!bs:dropdown>
+</!bs:btn-group></code></pre></figure>
+
+<h3>Vertical</h3>
+<div class="bd-example">
+    <bs:btn-group orientation="Vertical" add-class="mb-2" aria-label="Basic Sample">
+        <bs:button skin="secondary">Button</bs:button>
+        <bs:button skin="secondary">Button</bs:button>
+        <bs:dropdown caption="Dropdown" id="btn1">
+            <bs:item url="#">Dropdown link</bs:item>
+            <bs:item url="#">Dropdown link</bs:item>
+        </bs:dropdown>
+    </bs:btn-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:btn-group orientation="Vertical" add-class="mb-2" aria-label="Basic Sample">
+    <!bs:button skin="secondary">Button</!bs:button>
+    <!bs:button skin="secondary">Button</!bs:button>
+    <!bs:dropdown caption="Dropdown" id="btn1">
+        <!bs:item url="#">Dropdown link</!bs:item>
+        <!bs:item url="#">Dropdown link</!bs:item>
+    </!bs:dropdown>
+</!bs:btn-group></code></pre></figure>

@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var pages = new NavPage[] {
+        new NavPage { Caption = "Documentation", Page = "Documentation/Index" },
+        new NavPage { Caption = "Components", Page = "Components/Index" },
+    };
+}
+<h3>Boostrap 4</h3>
+<h4>Documentation</h4>
+<ul class="nav flex-column">
+    @foreach (var item in pages)
+    {
+        var current = Url.Page(item.Page) == Context.Request.Path;
+        var _class = current ? "nav-link active": "nav-link";
+        <li class="nav-item"><a class="@_class" asp-page="@item.Page">@item.Caption</a></li>
+    }
+</ul>

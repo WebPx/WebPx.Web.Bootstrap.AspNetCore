@@ -1,0 +1,69 @@
+﻿@page
+@model WebPx.Web.Bootstrap.AspNetCore.DemoSite.Pages.Bootstrap.Components.ProgressBarsModel
+@{
+    ViewBag.Title = "Progress Bars";
+}
+<bs:example>
+    <bs:progress value="0"></bs:progress>
+    <bs:progress value="25"></bs:progress>
+    <bs:progress value="50"></bs:progress>
+    <bs:progress value="75"></bs:progress>
+    <bs:progress value="100"></bs:progress>
+</bs:example>
+<bs:figure><code html><!bs:progress value="0"></!bs:progress>
+<!bs:progress value="25"></!bs:progress>
+<!bs:progress value="50"></!bs:progress>
+<!bs:progress value="75"></!bs:progress>
+<!bs:progress value="100"></!bs:progress></code></bs:figure>
+
+<h3>Height</h3>
+<p>We only set a <code>height</code> value on the <code>.progress</code>, so if you change that value the inner <code>.progress-bar</code> will automatically resize accordingly.</p>
+<bs:example>
+    <bs:progress value="25" style="height: 1px;"></bs:progress>
+    <bs:progress value="25" style="height: 20px;"></bs:progress>
+</bs:example>
+<bs:figure><code html><!bs:progress value="25" style="height: 1px;"></!bs:progress>
+<!bs:progress value="25" style="height: 20px;"></!bs:progress></code></bs:figure>
+
+<h3>Backgrounds</h3>
+<p>Use background utility classes to change the appearance of individual progress bars.</p>
+<bs:example>
+    <bs:progress skin="success" value="25"></bs:progress>
+    <bs:progress skin="primary" value="50"></bs:progress>
+    <bs:progress skin="warning" value="75"></bs:progress>
+    <bs:progress skin="danger" value="100"></bs:progress>
+</bs:example>
+<bs:figure><code html><!bs:progress skin="success" value="25"></!bs:progress>
+<!bs:progress skin="primary" value="50"></!bs:progress>
+<!bs:progress skin="warning" value="75"></!bs:progress>
+<!bs:progress skin="danger" value="100"></!bs:progress></code></bs:figure>
+
+<h3>Stripped</h3>
+<p>Add <code>.progress-bar-striped</code> to any <code>.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
+<bs:example>
+    <bs:progress skin="stripedSuccess" value="10"></bs:progress>
+    <bs:progress skin="stripedPrimary" value="25"></bs:progress>
+    <bs:progress skin="stripedInfo" value="50"></bs:progress>
+    <bs:progress skin="stripedWarning" value="75"></bs:progress>
+    <bs:progress skin="stripedDanger" value="100"></bs:progress>
+</bs:example>
+<bs:figure><code html><!bs:progress skin="stripedSuccess" value="10"></!bs:progress>
+<!bs:progress skin="stripedPrimary" value="25"></!bs:progress>
+<!bs:progress skin="stripedInfo" value="50"></!bs:progress>
+<!bs:progress skin="stripedWarning" value="75"></!bs:progress>
+<!bs:progress skin="stripedDanger" value="100"></!bs:progress></code></bs:figure>
+
+<h3>Animated Strips</h3>
+<p>Add <code>.progress-bar-striped</code> to any <code>.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.</p>
+<bs:example>
+    <bs:progress skin="stripedSuccess" value="10" animated="true"></bs:progress>
+    <bs:progress skin="stripedPrimary" value="25" animated="true"></bs:progress>
+    <bs:progress skin="stripedInfo" value="50" animated="true"></bs:progress>
+    <bs:progress skin="stripedWarning" value="75" animated="true"></bs:progress>
+    <bs:progress skin="stripedDanger" value="100" animated="true"></bs:progress>
+</bs:example>
+<bs:figure><code html><!bs:progress skin="stripedSuccess" value="10" animated="true"></!bs:progress>
+<!bs:progress skin="stripedPrimary" value="25" animated="true"></!bs:progress>
+<!bs:progress skin="stripedInfo" value="50" animated="true"></!bs:progress>
+<!bs:progress skin="stripedWarning" value="75" animated="true"></!bs:progress>
+<!bs:progress skin="stripedDanger" value="100" animated="true"></!bs:progress></code></bs:figure>

@@ -1,0 +1,897 @@
+﻿@page
+@model WebPx.Web.Bootstrap.AspNetCore.DemoSite.Pages.Bootstrap.Components.CardsModel
+@{
+    ViewBag.Title = "Cards";
+    Func<dynamic, object> image = @<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="40%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>;
+}
+<h3>Example</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-4">
+            <bs:card>
+                @*<img src="..." class="card-img-top" alt="...">*@
+                @image(null)
+                <bs:body>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <bs:button skin="primary" url="#">Go somewhere</bs:button>
+                </bs:body>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card>
+    <!bs:body>
+    <img src="..." class="card-img-top" alt="...">
+
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!bs:button skin="primary" url="#">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Body</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-4">
+            <bs:card>
+                <bs:body>
+                    This is some text within a card body.
+                </bs:body>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card>
+    <!bs:body>
+        This is some text within a card body.
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Titles, text, and links</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-4">
+            <bs:card>
+                <bs:body>
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </bs:body>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card>
+    <!bs:body>
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Images</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-4">
+            <bs:card>
+                @*<img src="..." class="card-img-top" alt="...">*@
+                @image(null)
+                <bs:body>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </bs:body>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card>
+    <img src="..." class="card-img-top" alt="...">
+
+    <!bs:body>
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>ListGroups</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-4">
+            <bs:card>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Kitchen sink</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-4">
+            <bs:card>
+                @image(null)
+                <bs:body>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </bs:body>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card>
+    <img src="..." class="card-img-top" alt="...">
+
+    <!bs:body>
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </!bs:body>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Header and footer</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-4">
+            <bs:card caption="Featured">
+                <bs:body>
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <bs:button url="#" skin="primary">Go somewhere</bs:button>
+                </bs:body>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card caption="Featured">
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <bs:button url="#" skin="primary">Go somewhere</bs:button>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Quote and footer</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-4">
+            <bs:card caption="Quote">
+                <bs:body>
+                    <blockquote class="blockquote mb-0 mt-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </bs:body>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card caption="Quote">
+    <!bs:body>
+    <blockquote class="blockquote mb-0 mt-0">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:card caption="Featured" add-class="text-center">
+        <bs:body>
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+        <bs:footer add-class="text-muted">2 days ago</bs:footer>
+    </bs:card>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card caption="Featured" add-class="text-center">
+    <!bs:body>
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <bs:button url="#" skin="primary">Go somewhere</bs:button>
+    </!bs:body>
+    <!bs:footer add-class="text-muted">2 days ago</!bs:footer>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Sizing</h3>
+<div class="bd-example">
+    <div class="row">
+        <div class="col-6">
+            <bs:card>
+                <bs:body>
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <bs:button url="#" skin="primary">Go somewhere</bs:button>
+                </bs:body>
+            </bs:card>
+        </div>
+        <div class="col-6">
+            <bs:card>
+                <bs:body>
+                    <h4 class="card-title">Special title treatment</h4>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <bs:button url="#" skin="primary">Go somewhere</bs:button>
+                </bs:body>
+            </bs:card>
+        </div>
+    </div>
+</div>
+<figure class="highlight">
+    <pre><code html><div class="row">
+    <div class="col-6">
+    <!bs:card>
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+            </!bs:body>
+        </!bs:card>
+    </div>
+    <div class="col-6">
+    <!bs:card>
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+            </!bs:body>
+        </!bs:card>
+    </div>
+</div></code></pre>
+</figure>
+
+<h3>Utilities</h3>
+<div class="bd-example">
+    <bs:card add-class="w-75">
+        <bs:body>
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="w-50">
+        <bs:body>
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+    </bs:card>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card add-class="w-75">
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card>
+<!bs:card add-class="w-50">
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Custom CSS</h3>
+<div class="bd-example">
+    <bs:card style="width: 18rem;">
+        <bs:body>
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+    </bs:card>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card style="width: 18rem;">
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Text alignment</h3>
+<div class="bd-example">
+    <bs:card style="width:18rem">
+        <bs:body>
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="text-center" style="width:18rem">
+        <bs:body>
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="text-right" style="width:18rem">
+        <bs:body>
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+    </bs:card>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card style="width:18rem">
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card>
+<!bs:card add-class="text-center" style="width:18rem">
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card>
+<!bs:card add-class="text-right" style="width:18rem">
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Navigation</h3>
+<div class="bd-example">
+    <bs:card>
+        <bs:header>
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </bs:header>
+        <bs:body>
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+    </bs:card>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card>
+    <!bs:header>
+    <ul class="nav nav-tabs card-header-tabs">
+    <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+            </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+            </li>
+    <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </!bs:header>
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:card>
+        <bs:header>
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </bs:header>
+        <bs:body>
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <bs:button url="#" skin="primary">Go somewhere</bs:button>
+        </bs:body>
+    </bs:card>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card>
+    <!bs:header>
+    <ul class="nav nav-pills card-header-pills">
+    <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+            </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+            </li>
+    <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </!bs:header>
+    <!bs:body>
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <!bs:button url="#" skin="primary">Go somewhere</!bs:button>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Card Styles</h3>
+<div class="bd-example">
+    <bs:card class="card bg-primary mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card class="card bg-secondary mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card class="card bg-success mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card class="card bg-danger mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card class="card bg-warning mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card class="card bg-info mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card class="card bg-light mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    @*<bs:card class="card bg-dark mb-3" style="max-width: 18rem;">
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        </bs:card>*@
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card class="card bg-primary mb-3" style="max-width: 18rem;">
+    <!bs:header>Header</!bs:header>
+    <!bs:body>
+    <h5 class="card-title">Primary card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+<h3>Outlines</h3>
+<div class="bd-example">
+    <bs:card add-class="border-primary mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="border-secondary mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="border-success mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="border-danger mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="border-warning mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="border-info mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="border-light mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card add-class="border-dark mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card add-class="border-primary mb-3" style="max-width: 18rem;">
+    <!bs:header>Header</!bs:header>
+    <!bs:body>
+    <h5 class="card-title">Primary card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>
+
+@*<h3>Skins</h3>
+<div class="bd-example">
+    <bs:card skin="primary" add-class="mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card skin="secondary" add-class="mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card skin="success" add-class="mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card skin="danger" add-class="mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card skin="warning" add-class="mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card skin="info" add-class="mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card skin="light" add-class="mb-3" style="max-width: 18rem;">
+        <bs:header>Header</bs:header>
+        <bs:body>
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </bs:body>
+    </bs:card>
+    <bs:card skin="dark" add-class="mb-3" style="max-width: 18rem;">
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        </bs:card>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card skin="primary" add-class="mb-3" style="max-width: 18rem;">
+    <!bs:header>Header</!bs:header>
+    <!bs:body>
+    <h5 class="card-title">Primary card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </!bs:body>
+</!bs:card></code></pre>
+</figure>*@
+
+<h3>Card Groups</h3>
+<div class="bd-example">
+    <bs:card-group>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Info card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        </bs:card>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        </bs:card>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        </bs:card>
+    </bs:card-group>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card-group>
+    <!bs:card>
+    <!bs:header>Header</!bs:header>
+    <!bs:body>
+    <h5 class="card-title">Info card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+    </!bs:card>
+    <!bs:card>
+    <!bs:header>Header</!bs:header>
+    <!bs:body>
+    <h5 class="card-title">Light card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+    </!bs:card>
+    <!bs:card>
+    <!bs:header>Header</!bs:header>
+    <!bs:body>
+    <h5 class="card-title">Dark card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+    </!bs:card>
+</!bs:card-group></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:card-group>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Info card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+            <bs:footer add-class="text-muted">Last updated 3 mins ago</bs:footer>
+        </bs:card>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+            <bs:footer add-class="text-muted">Last updated 3 mins ago</bs:footer>
+        </bs:card>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+            <bs:footer add-class="text-muted">Last updated 3 mins ago</bs:footer>
+        </bs:card>
+    </bs:card-group>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:card-group>
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+        <!bs:body>
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+        <!bs:footer add-class="text-muted">Last updated 3 mins ago</!bs:footer>
+    </!bs:card>
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+        <!bs:body>
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+        <!bs:footer add-class="text-muted">Last updated 3 mins ago</!bs:footer>
+    </!bs:card>
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+            !<bs:body>
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        <!bs:footer add-class="text-muted">Last updated 3 mins ago</!bs:footer>
+    </!bs:card>
+</!bs:card-group></code></pre>
+</figure>
+
+<h3>Card Deck</h3>
+<div class="bd-example">
+    <bs:card-group is-deck="true">
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Info card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        </bs:card>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        </bs:card>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+        </bs:card>
+    </bs:card-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:card-group is-deck="true">
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+        <!bs:body>
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+    </!bs:card>
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+        <!bs:body>
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+    </!bs:card>
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+        <!bs:body>
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+    </!bs:card>
+</!bs:card-group></code></pre></figure>
+
+<div class="bd-example">
+    <bs:card-group is-deck="true">
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Info card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+            <bs:footer add-class="text-muted">Last updated 3 mins ago</bs:footer>
+        </bs:card>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+            <bs:footer add-class="text-muted">Last updated 3 mins ago</bs:footer>
+        </bs:card>
+        <bs:card>
+            <bs:header>Header</bs:header>
+            <bs:body>
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </bs:body>
+            <bs:footer add-class="text-muted">Last updated 3 mins ago</bs:footer>
+        </bs:card>
+    </bs:card-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:card-group is-deck="true">
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+        <!bs:body>
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+        <!bs:footer add-class="text-muted">Last updated 3 mins ago</!bs:footer>
+    </!bs:card>
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+        <!bs:body>
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+        <!bs:footer add-class="text-muted">Last updated 3 mins ago</!bs:footer>
+    </!bs:card>
+    <!bs:card>
+        <!bs:header>Header</!bs:header>
+        <!bs:body>
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </!bs:body>
+        <!bs:footer add-class="text-muted">Last updated 3 mins ago</!bs:footer>
+    </!bs:card>
+</!bs:card-group></code></pre></figure>

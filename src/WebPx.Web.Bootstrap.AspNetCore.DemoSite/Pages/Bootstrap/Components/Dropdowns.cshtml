@@ -1,0 +1,335 @@
+﻿@page
+@model WebPx.Web.Bootstrap.AspNetCore.DemoSite.Pages.Bootstrap.Components.DropdownsModel
+@{
+    ViewBag.Title = "Dropdowns";
+}
+
+<div class="bd-example">
+    <bs:dropdown caption="Dropdown button" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:dropdown caption="Dropdown button" id="btn1">
+    <bs:item url="#">Action</bs:item>   
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:dropdown caption="Dropdown button" icon="fas fa-save" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:dropdown caption="Dropdown button" icon="fas fa-save" id="btn1">
+    <bs:item url="#">Action</bs:item>   
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:dropdown caption="Dropdown link" as-link="true" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:dropdown caption="Dropdown link" as-link="true" id="btn1">
+    <bs:item url="#">Action</bs:item>   
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:dropdown caption="Primary" skin="primary" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Secondary" skin="secondary" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Success" skin="success" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Info" skin="info" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Warning" skin="warning" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Danger" skin="danger" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:dropdown caption="Primary" skin="primary" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Secondary" skin="secondary" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Success" skin="success" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Info" skin="info" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Warning" skin="warning" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Danger" skin="danger" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:dropdown caption="Primary" skin="primary" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Secondary" skin="secondary" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Success" skin="success" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Info" skin="info" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Warning" skin="warning" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Danger" skin="danger" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:dropdown caption="Primary" skin="primary" split="true" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Secondary" skin="secondary" split="true" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Success" skin="success" split="true" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Info" skin="info" split="true" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Warning" skin="warning" split="true" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Danger" skin="danger" split="true" add-class="mr-2" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+</!bs:dropdown></code></pre>
+</figure>
+
+<div class="bd-example">
+    <bs:btn-toolbar add-class="mb-2">
+        <bs:dropdown caption="Dropdown link" size="Large" id="btn1">
+            <bs:item url="#">Action</bs:item>
+            <bs:item url="#">Another action</bs:item>
+            <bs:item url="#">Something else here</bs:item>
+        </bs:dropdown>
+    </bs:btn-toolbar>
+    <bs:btn-toolbar>
+        <bs:dropdown caption="Dropdown link" size="Small" id="btn1">
+            <bs:item url="#">Action</bs:item>
+            <bs:item url="#">Another action</bs:item>
+            <bs:item url="#">Something else here</bs:item>
+        </bs:dropdown>
+    </bs:btn-toolbar>
+</div>
+<figure class="highlight">
+    <pre><code html><!bs:btn-toolbar add-class="mb-2">
+    <!bs:dropdown caption="Dropdown link" size="Large" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+    </!bs:dropdown>
+</!bs:btn-toolbar>
+<!bs:btn-toolbar>
+    <!bs:dropdown caption="Dropdown link" size="Small" id="btn1">
+    <bs:item url="#">Action</bs:item>
+    <bs:item url="#">Another action</bs:item>
+    <bs:item url="#">Something else here</bs:item>
+    </!bs:dropdown>
+</!bs:btn-toolbar></code></pre>
+</figure>
+
+<h3>Direction</h3>
+
+<h4>Up</h4>
+
+<div class="bd-example">
+    <bs:dropdown caption="Dropup" direction="Up" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Split dropup" direction="Up" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight"><pre><code html><!bs:dropdown caption="Dropup" direction="Up" add-class="mr-2" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Split dropup" direction="Up" split="true" add-class="mr-2" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown></code></pre></figure>
+
+<h4>Right</h4>
+
+<div class="bd-example">
+    <bs:dropdown caption="Primary" direction="Right" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Secondary" direction="Right" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight"><pre><code html><!bs:dropdown caption="Primary" direction="Right" add-class="mr-2" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Secondary" direction="Right" split="true" add-class="mr-2" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown></code></pre></figure>
+
+<h4>Left</h4>
+
+<div class="bd-example">
+    <bs:dropdown caption="Primary" direction="Left" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+    <bs:dropdown caption="Secondary" direction="Left" split="true" add-class="mr-2" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight"><pre><code html><!bs:dropdown caption="Primary" direction="Left" add-class="mr-2" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown>
+<!bs:dropdown caption="Secondary" direction="Left" split="true" add-class="mr-2" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown></code></pre></figure>
+
+<h3>Active</h3>
+
+<div class="bd-example">
+    <bs:dropdown caption="Dropdown" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#" active="true">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight"><pre><code html><!bs:dropdown caption="Dropdown" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#" active="true">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown></code></pre></figure>
+
+<h3>Disabled</h3>
+
+<div class="bd-example">
+    <bs:dropdown caption="Dropdown" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#" disabled="true">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight"><pre><code html><!bs:dropdown caption="Dropdown" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#" disabled="true">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown></code></pre></figure>
+
+<h3>Menu Alignment</h3>
+
+<div class="bd-example">
+    <bs:dropdown caption="Dropdown" alignment="Right" id="btn1">
+        <bs:item url="#">Action</bs:item>
+        <bs:item url="#" disabled="true">Another action</bs:item>
+        <bs:item url="#">Something else here</bs:item>
+    </bs:dropdown>
+</div>
+<figure class="highlight"><pre><code html><!bs:dropdown caption="Dropdown" alignment="Right" id="btn1">
+    <!bs:item url="#">Action</!bs:item>
+    <!bs:item url="#" disabled="true">Another action</!bs:item>
+    <!bs:item url="#">Something else here</!bs:item>
+</!bs:dropdown></code></pre></figure>

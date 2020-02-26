@@ -1,0 +1,337 @@
+﻿@page
+@model WebPx.Web.Bootstrap.AspNetCore.DemoSite.Pages.Bootstrap.Components.InputGroupsModel
+@{
+    ViewBag.Title = "Input Groups";
+}
+
+<div class="bd-example">
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:text>@@</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Input group example" />
+    </bs:input-group>
+    <bs:input-group add-class="mb-3">
+        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" />
+        <bs:append>
+            <bs:text>@@example.com</bs:text>
+        </bs:append>
+    </bs:input-group>
+    <label for="basic-url">Your vanity URL</label>
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:text>https://example.com/users/</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" id="basic-url" />
+    </bs:input-group>
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:text>$</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+        <bs:append>
+            <bs:button skin="Outlinesecondary">.00</bs:button>
+        </bs:append>
+    </bs:input-group>
+    <bs:input-group>
+        <bs:prepend>
+            <bs:text>With Text Area</bs:text>
+        </bs:prepend>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:text>@@</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Input group example" />
+</!bs:input-group>
+<!bs:input-group add-class="mb-3">
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" />
+    <!bs:append>
+        <bs:text>@@example.com</bs:text>
+    </!bs:append>
+</!bs:input-group>
+<label for="basic-url">Your vanity URL</label>
+<!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:text>https://example.com/users/</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" id="basic-url" />
+</!bs:input-group>
+<!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:text>$</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+    <!bs:append>
+        <bs:button skin="Outlinesecondary">.00</bs:button>
+    </!bs:append>
+</!bs:input-group>
+<!bs:input-group>
+    <!bs:prepend>
+        <bs:text>With Text Area</bs:text>
+    </!bs:prepend>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+</!bs:input-group></code></pre></figure>
+
+<h3>Wrapping</h3>
+<p>Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>.flex-nowrap.</code></p>
+
+<div class="bd-example">
+    <bs:input-group add-class="flex-nowrap  ">
+        <bs:prepend>
+            <bs:text>@@</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Input group example" />
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group add-class="flex-nowrap  ">
+    <!bs:prepend>
+        <bs:text>@@</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Input group example" />
+</!bs:input-group></code></pre></figure>
+
+<h3>Sizing</h3>
+<p>Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
+<p><strong>Sizing on the individual input group elements isn’t supported.</strong></p>
+
+<div class="bd-example">
+    <bs:input-group add-class="mb-3" size="Small">
+        <bs:prepend>
+            <bs:text>Small</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:text>Default</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+    <bs:input-group size="Large">
+        <bs:prepend>
+            <bs:text>Large</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group add-class="mb-3" size="Small">
+    <!bs:prepend>
+        <bs:text>Small</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group>
+<!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:text>Default</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group>
+<!bs:input-group size="Large">
+    <!bs:prepend>
+        <bs:text>Large</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group></code></pre></figure>
+
+<h3>Checkboxes and radios</h3>
+<p>Place any checkbox or radio option within an input group’s addon instead of text.</p>
+
+<div class="bd-example">
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:text><input type="checkbox" aria-label="Checkbox for following text input"></bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:text><input type="radio" aria-label="Radio button for following text input"></bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:text><input type="checkbox" aria-label="Checkbox for following text input"></bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group>
+<!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:text><input type="radio" aria-label="Radio button for following text input"></bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group></code></pre></figure>
+
+<h3>Multiple inputs</h3>
+<div class="bd-example">
+    <bs:input-group>
+        <bs:prepend>
+            <bs:text>First and last name</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+        <input type="text" class="form-control" />
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group>
+    <!bs:prepend>
+        <bs:text>First and last name</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+    <input type="text" class="form-control" />
+</!bs:input-group></code></pre></figure>
+
+<h3>Multiple addons</h3>
+<p>Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
+<div class="bd-example">
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:text>$</bs:text>
+            <bs:text>0.00</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+    <bs:input-group>
+        <input type="text" class="form-control" />
+        <bs:append>
+            <bs:text>$</bs:text>
+            <bs:text>0.00</bs:text>
+        </bs:append>
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:text>$</bs:text>
+        <bs:text>0.00</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group>
+<!bs:input-group>
+    <input type="text" class="form-control" />
+    <!bs:append>
+        <bs:text>$</bs:text>
+        <bs:text>0.00</bs:text>
+    </!bs:append>
+</!bs:input-group></code></pre></figure>
+
+<h3>Button addons</h3>
+<div class="bd-example">
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+    <bs:input-group add-class="mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" />
+        <bs:append>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+        </bs:append>
+    </bs:input-group>
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+    <bs:input-group add-class="mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" />
+        <bs:append>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+        </bs:append>
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group>
+<!bs:input-group add-class="mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" />
+    <!bs:append>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+    </!bs:append>
+</!bs:input-group>
+<!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group>
+<!bs:input-group add-class="mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" />
+    <!bs:append>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+    </!bs:append>
+</!bs:input-group></code></pre></figure>
+
+<h3>Buttons with dropdowns</h3>
+<div class="bd-example">
+    <bs:input-group add-class="mb-3">
+        <bs:prepend>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+        </bs:prepend>
+        <input type="text" class="form-control" />
+    </bs:input-group>
+    <bs:input-group add-class="mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" />
+        <bs:append>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+            <bs:button skin="OutlineSecondary">Button</bs:button>
+        </bs:append>
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group add-class="mb-3">
+    <!bs:prepend>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+    </!bs:prepend>
+    <input type="text" class="form-control" />
+</!bs:input-group>
+<!bs:input-group add-class="mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" />
+    <!bs:append>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+        <bs:button skin="OutlineSecondary">Button</bs:button>
+    </!bs:append>
+</!bs:input-group></code></pre></figure>
+
+<div class="bd-example">
+    <bs:input-group>
+        <bs:prepend>
+            <bs:text>Name</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+        <bs:prepend>
+            <bs:text>Name</bs:text>
+        </bs:prepend>
+        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+        <bs:append>
+            <bs:button skin="Outlinesecondary">Find</bs:button>
+        </bs:append>
+    </bs:input-group>
+</div>
+<figure class="highlight"><pre><code html><!bs:input-group>
+    <!bs:prepend>
+        <bs:text>Name</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+    <!bs:prepend>
+        <bs:text>Name</bs:text>
+    </!bs:prepend>
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+    <!bs:append>
+        <bs:button skin="Outlinesecondary">Find</bs:button>
+    </!bs:append>
+</!bs:input-group></code></pre></figure>
+
+<div class="bd-example">
+</div>
+<figure class="highlight"><pre><code html></code></pre></figure>

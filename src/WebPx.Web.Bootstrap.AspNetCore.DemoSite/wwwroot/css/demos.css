@@ -1,0 +1,23 @@
+﻿.bd-example {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0px 0;
+    border: solid #f8f9fa;
+    border-width: .2rem;
+}
+
+.bd-clipboard {
+    position: relative;
+    display: none;
+    float: right;
+}
+
+.highlight {
+    padding: 10px;
+    margin: 0;
+    background-color: #f8f9fa;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.bd-example > .alert + .alert, .bd-example > .nav + .nav, .bd-example > .navbar + .navbar, .bd-example > .progress + .btn, .bd-example > .progress + .progress {
+    margin-top: 1rem;
+}

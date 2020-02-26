@@ -1,0 +1,387 @@
+{
+  "Bootstrap": {
+    "Alert": [
+      {
+        "Name": "Default",
+        "Class": "alert alert-primary"
+      },
+      {
+        "Name": "Primary",
+        "Class": "alert alert-primary"
+      },
+      {
+        "Name": "Secondary",
+        "Class": "alert alert-secondary"
+      },
+      {
+        "Name": "Success",
+        "Class": "alert alert-success"
+      },
+      {
+        "Name": "Danger",
+        "Class": "alert alert-danger"
+      },
+      {
+        "Name": "Warning",
+        "Class": "alert alert-warning"
+      },
+      {
+        "Name": "Info",
+        "Class": "alert alert-info"
+      },
+      {
+        "Name": "Light",
+        "Class": "alert alert-light"
+      },
+      {
+        "Name": "Dark",
+        "Class": "alert alert-dark"
+      }
+    ],
+    "Badge": [
+      {
+        "Name": "Default",
+        "Class": "badge badge-primary"
+      },
+      {
+        "Name": "Primary",
+        "Class": "badge badge-primary"
+      },
+      {
+        "Name": "Secondary",
+        "Class": "badge badge-secondary"
+      },
+      {
+        "Name": "Success",
+        "Class": "badge badge-success"
+      },
+      {
+        "Name": "Info",
+        "Class": "badge badge-info"
+      },
+      {
+        "Name": "Danger",
+        "Class": "badge badge-danger"
+      },
+      {
+        "Name": "Warning",
+        "Class": "badge badge-warning"
+      },
+      {
+        "Name": "Light",
+        "Class": "badge badge-light"
+      },
+      {
+        "Name": "Pill",
+        "Pill": true,
+        "Class": "badge badge-primary"
+      },
+      {
+        "Name": "PillPrimary",
+        "Pill": true,
+        "Class": "badge badge-primary"
+      },
+      {
+        "Name": "PillSecondary",
+        "Pill": true,
+        "Class": "badge badge-secondary"
+      },
+      {
+        "Name": "PillSuccess",
+        "Pill": true,
+        "Class": "badge badge-success"
+      },
+      {
+        "Name": "PillInfo",
+        "Pill": true,
+        "Class": "badge badge-info"
+      },
+      {
+        "Name": "PillDanger",
+        "Pill": true,
+        "Class": "badge badge-danger"
+      },
+      {
+        "Name": "PillWarning",
+        "Pill": true,
+        "Class": "badge badge-warning"
+      }
+    ],
+    "Button": [
+      {
+        "Name": "Default",
+        "Class": "btn"
+      },
+      {
+        "Name": "Primary",
+        "Class": "btn btn-primary"
+      },
+      {
+        "Name": "Secondary",
+        "Class": "btn btn-secondary"
+      },
+      {
+        "Name": "Success",
+        "Class": "btn btn-success"
+      },
+      {
+        "Name": "Info",
+        "Class": "btn btn-info"
+      },
+      {
+        "Name": "Danger",
+        "Class": "btn btn-danger"
+      },
+      {
+        "Name": "Warning",
+        "Class": "btn btn-warning"
+      },
+      {
+        "Name": "OutlinePrimary",
+        "Class": "btn btn-outline-primary"
+      },
+      {
+        "Name": "OutlineSecondary",
+        "Class": "btn btn-outline-secondary"
+      },
+      {
+        "Name": "OutlineSuccess",
+        "Class": "btn btn-outline-sucess"
+      },
+      {
+        "Name": "OutlineInfo",
+        "Class": "btn btn-outline-info"
+      },
+      {
+        "Name": "OutlineDanger",
+        "Class": "btn btn-outline-danger"
+      },
+      {
+        "Name": "OutlineWarning",
+        "Class": "btn btn-outline-warning"
+      },
+      {
+        "Name": "OutlinePrimary",
+        "Class": "btn btn-outline-primary"
+      }
+    ],
+    "DropDown": [
+      {
+        "Name": "Default",
+        "Class": "btn"
+      },
+      {
+        "Name": "Primary",
+        "Class": "btn btn-primary"
+      },
+      {
+        "Name": "Secondary",
+        "Class": "btn btn-secondary"
+      },
+      {
+        "Name": "Success",
+        "Class": "btn btn-success"
+      },
+      {
+        "Name": "Info",
+        "Class": "btn btn-info"
+      },
+      {
+        "Name": "Danger",
+        "Class": "btn btn-danger"
+      },
+      {
+        "Name": "Warning",
+        "Class": "btn btn-warning"
+      },
+      {
+        "Name": "OutlinePrimary",
+        "Class": "btn btn-outline-primary"
+      },
+      {
+        "Name": "OutlineSecondary",
+        "Class": "btn btn-outline-secondary"
+      },
+      {
+        "Name": "OutlineSuccess",
+        "Class": "btn btn-outline-sucess"
+      },
+      {
+        "Name": "OutlineInfo",
+        "Class": "btn btn-outline-info"
+      },
+      {
+        "Name": "OutlineDanger",
+        "Class": "btn btn-outline-danger"
+      },
+      {
+        "Name": "OutlineWarning",
+        "Class": "btn btn-outline-warning"
+      },
+      {
+        "Name": "OutlinePrimary",
+        "Class": "btn btn-outline-primary"
+      }
+    ],
+    "Card": [
+      {
+        "Name": "Default",
+        "Class": "card card-light",
+        "HeaderClass": "card-header",
+        "BodyClass": "card-body",
+        "FooterClass": "card-footer"
+      },
+      {
+        "Name": "Primary",
+        "Class": "card card-primary"
+      },
+      {
+        "Name": "Secondary",
+        "Class": "card card-secondary"
+      },
+      {
+        "Name": "Success",
+        "Class": "card card-success"
+      },
+      {
+        "Name": "Info",
+        "Class": "card card-info"
+      },
+      {
+        "Name": "Danger",
+        "Class": "card card-danger"
+      },
+      {
+        "Name": "Warning",
+        "Class": "card card-warning"
+      },
+      {
+        "Name": "Light",
+        "Class": "card card-light"
+      },
+      {
+        "Name": "Dark",
+        "Class": "card card-dark"
+      },
+      {
+        "Name": "OutlinePrimary",
+        "Class": "card card-outline card-primary"
+      },
+      {
+        "Name": "OutlineSecondary",
+        "Class": "card card-outline card-secondary"
+      },
+      {
+        "Name": "OutlineSuccess",
+        "Class": "card card-outline card-sucess"
+      },
+      {
+        "Name": "OutlineInfo",
+        "Class": "card card-outline card-info"
+      },
+      {
+        "Name": "OutlineDanger",
+        "Class": "card card-outline card-danger"
+      },
+      {
+        "Name": "OutlineWarning",
+        "Class": "card card-outline card-warning"
+      },
+      {
+        "Name": "OutlineLight",
+        "Class": "card card-outline card-link"
+      },
+      {
+        "Name": "OutlineDark",
+        "Class": "card card-outline card-dark"
+      }
+    ],
+    "Progress": [
+      {
+        "Name": "Default",
+        "Class": "progress",
+        "BarClass": "progress-bar"
+      },
+      {
+        "Name": "Primary",
+        "Class": "progress",
+        "BarClass": "progress-bar bg-primary"
+      },
+      {
+        "Name": "Secondary",
+        "Class": "progress",
+        "BarClass": "progress-bar bg-secondary"
+      },
+      {
+        "Name": "Success",
+        "Class": "progress",
+        "BarClass": "progress-bar bg-success"
+      },
+      {
+        "Name": "Danger",
+        "Class": "progress",
+        "BarClass": "progress-bar bg-danger"
+      },
+      {
+        "Name": "Warning",
+        "Class": "progress",
+        "BarClass": "progress-bar bg-warning"
+      },
+      {
+        "Name": "Info",
+        "Class": "progress",
+        "BarClass": "progress-bar bg-info"
+      },
+      {
+        "Name": "Light",
+        "Class": "progress",
+        "BarClass": "progress-bar bg-light"
+      },
+      {
+        "Name": "Dark",
+        "Class": "progress",
+        "BarClass": "progress-bar bg-dark"
+      },
+      {
+        "Name": "StripedPrimary",
+        "Class": "progress",
+        "BarClass": "progress-bar progress-bar-striped bg-primary"
+      },
+      {
+        "Name": "StripedSecondary",
+        "Class": "progress",
+        "BarClass": "progress-bar progress-bar-striped bg-secondary"
+      },
+      {
+        "Name": "StripedSuccess",
+        "Class": "progress",
+        "BarClass": "progress-bar progress-bar-striped bg-success"
+      },
+      {
+        "Name": "StripedDanger",
+        "Class": "progress",
+        "BarClass": "progress-bar progress-bar-striped bg-danger"
+      },
+      {
+        "Name": "StripedWarning",
+        "Class": "progress",
+        "BarClass": "progress-bar progress-bar-striped bg-warning"
+      },
+      {
+        "Name": "StripedInfo",
+        "Class": "progress",
+        "BarClass": "progress-bar progress-bar-striped bg-info"
+      },
+      {
+        "Name": "StripedLight",
+        "Class": "progress",
+        "BarClass": "progress-bar progress-bar-striped bg-light"
+      },
+      {
+        "Name": "StripedDark",
+        "Class": "progress",
+        "BarClass": "progress-bar progress-bar-striped bg-dark"
+      }
+    ]
+  }
+}
