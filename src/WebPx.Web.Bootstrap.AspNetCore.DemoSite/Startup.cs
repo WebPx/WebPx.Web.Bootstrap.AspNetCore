@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebPx.Web.Bootstrap.AspNetCore.DemoSite.Pages;
 
 namespace WebPx.Web.Bootstrap.AspNetCore.DemoSite
 {
@@ -40,7 +41,7 @@ namespace WebPx.Web.Bootstrap.AspNetCore.DemoSite
 
             services.AddTagHelperAdapters();
             services.AddBootstrap();
-
+            services.AddScoped<INavPageService, NavPageService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

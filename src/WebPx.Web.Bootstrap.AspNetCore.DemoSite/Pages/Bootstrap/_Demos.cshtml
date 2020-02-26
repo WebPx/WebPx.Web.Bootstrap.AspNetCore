@@ -1,12 +1,13 @@
 ﻿@{
     Layout = "_Layout";
 }
+<partial name="_Breadcrumbs" />
+<h2>@ViewBag.Section - @ViewBag.Title</h2>
 <div class="row">
-    <div class="col-2">
+    <div class="col-4 col-xl-2 col-lg-3 col-md-3 col-sm-4">
         <partial name="_Nav" />
     </div>
-    <div class="col-10">
-        <h2>@ViewBag.Title</h2>
+    <div class="col-8 col-xl-10 col-lg-9 col-md-9 col-sm-8">
         @RenderBody()
     </div>
 </div>

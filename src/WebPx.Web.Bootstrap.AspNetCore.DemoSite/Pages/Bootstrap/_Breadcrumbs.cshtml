@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var items = Nav.ToList();
+    if (!(ViewBag.IsIndex ?? false))
+    {
+        items.Add(new NavPage { Area = null, Caption = ViewBag.PageTitle ?? ViewBag.Title, Page = null });
+    }
+    var last = items.Last();
+}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        @foreach (var item in items)
+        {
+            bool active = item == last;
+            var _class = active ? "breadcrumb-item active" : "breadcrumb-item";
+            if (active)
+            {
+        <li class="breadcrumb-item active" aria-current="page">@item.Caption</li>
+            }
+            else
+            {
+        <li class="@_class"><a asp-page="@item.Page" asp-area="@item.Area">@item.Caption</a></li>
+            }
+        }
+        @*<li class="breadcrumb-item"><a asp-page="/Index" asp-area="">Home</a></li>
+        <li class="breadcrumb-item"><a asp-page="/Bootstrap/Index" asp-area="">Bootstrap</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@(ViewBag.PageTitle ?? ViewBag.Title)</li>*@
+    </ol>
+</nav>
