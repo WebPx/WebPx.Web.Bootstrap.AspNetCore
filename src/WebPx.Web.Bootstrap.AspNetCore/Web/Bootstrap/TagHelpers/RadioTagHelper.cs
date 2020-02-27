@@ -73,7 +73,7 @@ namespace WebPx.Web.Bootstrap.TagHelpers
             if (AspFor?.Model is bool)
                 @checked = (bool)AspFor.Model;
             if (AspFor != null)
-                output.PreContent.AppendHtml(HtmlGenerator.GenerateRadioButton(this.ViewContext, AspFor?.ModelExplorer, AspFor?.Name, value, @checked, null));
+                output.PreContent.AppendHtml(HtmlGenerator.GenerateRadioButton(this.ViewContext, AspFor?.ModelExplorer, AspFor?.Name, AspFor?.Model, @checked, null));
             else
             {
                 output.PreContent.AppendHtml("<input type=\"radio\"");
