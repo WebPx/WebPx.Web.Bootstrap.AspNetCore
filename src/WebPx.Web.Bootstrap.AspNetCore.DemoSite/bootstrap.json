@@ -133,6 +133,14 @@
         "Class": "btn btn-danger"
       },
       {
+        "Name": "Light",
+        "Class": "btn btn-light"
+      },
+      {
+        "Name": "Dark",
+        "Class": "btn btn-dark"
+      },
+      {
         "Name": "Warning",
         "Class": "btn btn-warning"
       },
@@ -146,7 +154,7 @@
       },
       {
         "Name": "OutlineSuccess",
-        "Class": "btn btn-outline-sucess"
+        "Class": "btn btn-outline-success"
       },
       {
         "Name": "OutlineInfo",
@@ -161,8 +169,12 @@
         "Class": "btn btn-outline-warning"
       },
       {
-        "Name": "OutlinePrimary",
-        "Class": "btn btn-outline-primary"
+        "Name": "OutlineLight",
+        "Class": "btn btn-outline-light"
+      },
+      {
+        "Name": "OutlineDark",
+        "Class": "btn btn-outline-dark"
       }
     ],
     "DropDown": [

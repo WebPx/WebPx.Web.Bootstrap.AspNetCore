@@ -14,6 +14,7 @@ namespace WebPx.Web.Bootstrap.Configuration
 
         public string ButtonGroupClass { get; set; } = "btn-group";
         public string ButtonToolbarClass { get; set; } = "btn-toolbar";
+        public string ButtonGroupToggleClass { get; set; } = "btn-group-toggle";
 
         public string VerticalButtonGroupClass { get; set; } = "btn-group-vertical";
 

@@ -30,11 +30,23 @@ namespace WebPx.Web.Bootstrap.TagHelpers
 
         public Orientation Orientation { get; set; }
 
+        public bool Toggle { get; set; }
+
+        public override void Init(TagHelperContext context)
+        {
+            base.Init(context);
+            context.Items[typeof(IButtonGroupContext)] = new ButtonGroupContext { Settings = _settings };
+        }
+
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "div";
             output.SetDefaultClass(Orientation == Orientation.Horizontal ? _settings.ButtonGroupClass : _settings.VerticalButtonGroupClass);
+            if (Toggle)
+                output.AppendClass(_settings.ButtonGroupToggleClass);
             output.Attributes.Add("role", "group");
+            if (Toggle)
+                output.Attributes.Add("data-toggle", "buttons");
             switch (Size)
             {
                 case ControlSize.Large: output.AppendClass("btn-group-lg"); break;

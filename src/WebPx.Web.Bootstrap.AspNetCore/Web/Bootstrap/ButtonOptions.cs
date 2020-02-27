@@ -22,6 +22,14 @@ namespace WebPx.Web.Bootstrap
 
         public string BlockClass { get; set; } = "btn-block";
 
+        public string ActiveClass { get; set; } = "active";
+
         public static ButtonOptions Default { get => new ButtonOptions(); }
+    }
+
+    public static class ButtonSkins
+    {
+        public static ButtonOptions Secondary { get => new ButtonOptions() { Name = "Secondary", Class = "btn btn-secondary" }; }
+        public static ButtonOptions Dark { get => new ButtonOptions() { Name = "Dark", Class = "btn btn-dark" }; }
     }
 }

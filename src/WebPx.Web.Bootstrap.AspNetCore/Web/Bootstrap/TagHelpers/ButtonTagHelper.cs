@@ -141,13 +141,47 @@ namespace WebPx.Web.Bootstrap.TagHelpers
             }
         }
 
+        public ControlSize Size { get; set; }
+
+        public string SmallClass { get => Settings.SmallClass; set => Settings.SmallClass = value; }
+
+        public string LargeClass { get => Settings.LargeClass; set => Settings.LargeClass = value; }
+
+        public string BlockClass { get => Settings.BlockClass; set => Settings.BlockClass = value; }
+
+        public string ActiveClass { get => Settings.ActiveClass; set => Settings.ActiveClass = value; }
+
+        public bool Block { get; set; }
+
+        public bool Active { get; set; }
+
+        public bool Toggle { get; set; }
+
+        public bool Pressed { get; set; }
+
         protected override void DoProcess(TagHelperContext context, TagHelperOutput output)
         {
             base.DoProcess(context, output);
             _boostrapGenerator.Button(output, null, BuildRouteValues(), Url, Route, Controller, Action, Page, PageHandler, Area, Fragment, Host, Protocol, null);
             if (!string.IsNullOrEmpty(Icon))
                 _boostrapGenerator.Icon(output, Icon, IconLocation);
-
+            if (Size != ControlSize.Normal)
+                switch (Size)
+                {
+                    case ControlSize.Small: output.AppendClass(this.SmallClass); break;
+                    case ControlSize.Large: output.AppendClass(this.LargeClass); break;
+                }
+            if (Block)
+                output.AppendClass(this.BlockClass);
+            if (Active)
+                output.AppendClass(this.ActiveClass);
+            if (context.AllAttributes.ContainsName("disabled"))
+                output.AppendClass("disabled");
+            if (Toggle)
+            {
+                output.Attributes.Add("data-toggle", "button");
+                output.Attributes.Add("aria-pressed", Pressed.ToString().ToLower());
+            }
         }
 
         private RouteValueDictionary BuildRouteValues()

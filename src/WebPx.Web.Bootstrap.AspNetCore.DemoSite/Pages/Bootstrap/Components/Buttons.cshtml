@@ -1,0 +1,114 @@
+﻿@page
+@model WebPx.Web.Bootstrap.AspNetCore.DemoSite.Pages.Bootstrap.Components.ButtonsModel
+@{
+    ViewBag.Title = "Buttons";
+}
+<h3>Examples</h3>
+<bs:example>
+    <bs:button skin="primary">Primary</bs:button>
+    <bs:button skin="secondary">Secondary</bs:button>
+    <bs:button skin="success">Success</bs:button>
+    <bs:button skin="danger">Danger</bs:button>
+    <bs:button skin="warning">Warning</bs:button>
+    <bs:button skin="info">Info</bs:button>
+    <bs:button skin="light">Light</bs:button>
+    <bs:button skin="dark">Dark</bs:button>
+    <bs:button skin="link">Link</bs:button>
+</bs:example>
+<bs:figure><code html><!bs:button skin="primary">Primary</!bs:button>
+<!bs:button skin="secondary">Secondary</!bs:button>
+<!bs:button skin="success">Success</!bs:button>
+<!bs:button skin="danger">Danger</!bs:button>
+<!bs:button skin="warning">Warning</!bs:button>
+<!bs:button skin="info">Info</!bs:button>
+<!bs:button skin="light">Light</!bs:button>
+<!bs:button skin="dark">Dark</!bs:button>
+<!bs:button skin="link">Link</!bs:button></code></bs:figure>
+
+<h3>Putline buttons</h3>
+<bs:example>
+    <bs:button skin="outlinePrimary">Primary</bs:button>
+    <bs:button skin="outlineSecondary">Secondary</bs:button>
+    <bs:button skin="outlineSuccess">Success</bs:button>
+    <bs:button skin="outlineDanger">Danger</bs:button>
+    <bs:button skin="outlineWarning">Warning</bs:button>
+    <bs:button skin="outlineInfo">Info</bs:button>
+    <bs:button skin="outlineLight">Light</bs:button>
+    <bs:button skin="outlineDark">Dark</bs:button>
+    <bs:button skin="outlineLink">Link</bs:button>
+</bs:example>
+<bs:figure><code html><!bs:button skin="outlinePrimary">Primary</!bs:button>
+<!bs:button skin="outlineSecondary">Secondary</!bs:button>
+<!bs:button skin="outlineSuccess">Success</!bs:button>
+<!bs:button skin="outlineDanger">Danger</!bs:button>
+<!bs:button skin="outlineWarning">Warning</!bs:button>
+<!bs:button skin="outlineInfo">Info</!bs:button>
+<!bs:button skin="outlineLight">Light</!bs:button>
+<!bs:button skin="outlineDark">Dark</!bs:button>
+<!bs:button skin="outlineLink">Link</!bs:button></code></bs:figure>
+
+<h3>Size</h3>
+<bs:example>
+    <bs:button skin="primary" size="Large">Large button</bs:button>
+    <bs:button skin="dark" size="Large">Large button</bs:button>
+</bs:example>
+<bs:figure><code html><!bs:button skin="primary" size="Large">Large button</!bs:button>
+<!bs:button skin="dark" size="Large">Large button</!bs:button></code></bs:figure>
+
+<bs:example>
+    <bs:button skin="primary" size="Small">Small button</bs:button>
+    <bs:button skin="dark" size="Small">Small button</bs:button>
+</bs:example>
+<bs:figure><code html>Sample</code></bs:figure>
+
+<bs:example>
+    <bs:button skin="primary" size="Large" lock="true">Block level button</bs:button>
+    <bs:button skin="dark" size="Large" s-block="true">Block level button</bs:button>
+</bs:example>
+<bs:figure><code html><!bs:button skin="primary" size="Large" lock="true">Block level button</!bs:button>
+<!bs:button skin="dark" size="Large" s-block="true">Block level button</!bs:button></code></bs:figure>
+
+<h3>Active</h3>
+<bs:example>
+    <bs:button skin="primary" size="Large" active="true" url="#">Primary Link</bs:button>
+    <bs:button skin="Dark" size="Large" active="true" url="#">Link</bs:button>
+</bs:example>
+<bs:figure><code html><!bs:button skin="primary" size="Large" active="true" url="#">Primary Link</!bs:button>
+<!bs:button skin="Dark" size="Large" active="true" url="#">Link</!bs:button></code></bs:figure>
+
+<h3>Disabled</h3>
+<bs:example>
+    <bs:button skin="primary" size="Large" disabled url="#">Primary Link</bs:button>
+    <bs:button skin="Dark" size="Large" disabled url="#">Link</bs:button>
+</bs:example>
+<bs:figure><code html><!bs:button skin="primary" size="Large" disabled url="#">Primary Link</!bs:button>
+<!bs:button skin="Dark" size="Large" disabled url="#">Link</!bs:button></code></bs:figure>
+
+<h3>Toogle states</h3>
+<bs:example>
+    <bs:button skin="primary" toggle="true" url="#">Single Toogle</bs:button>
+</bs:example>
+<bs:figure><code html><!bs:button skin="primary" toggle="true" url="#">Single Toogle</!bs:button></code></bs:figure>
+
+<h3>Checkbox and radio buttons</h3>
+<bs:example>
+    <bs:btn-group toggle="true">
+        <bs:checkbox name="options" checked="true">Active</bs:checkbox>
+    </bs:btn-group>
+</bs:example>
+<bs:figure><code html><!bs:btn-group toggle="true">
+    <!bs:checkbox name="options" checked="true">Active</!bs:checkbox>
+</!bs:btn-group></code></bs:figure>
+
+<bs:example>
+    <bs:btn-group toggle="true">
+        <bs:radio name="options" id="option1" checked="true">Active</bs:radio>
+        <bs:radio name="options" id="option2">Active</bs:radio>
+        <bs:radio name="options" id="option3">Active</bs:radio>
+    </bs:btn-group>
+</bs:example>
+<bs:figure><code html><!bs:btn-group toggle="true">
+    <!bs:radio name="options" id="option1" checked="true">Active</!bs:radio>
+    <!bs:radio name="options" id="option2">Active</!bs:radio>
+    <!bs:radio name="options" id="option3">Active</!bs:radio>
+</!bs:btn-group></code></bs:figure>
