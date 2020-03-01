@@ -10,8 +10,6 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>WebPx</RootNamespace>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>C:\Users\Administrator\source\repos\WebPx.Portal\Signing\WebPx6.pfx</AssemblyOriginatorKeyFile>
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
